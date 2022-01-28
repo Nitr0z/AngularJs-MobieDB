@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Liste des films</h2>
+<ul class="block">
+<li *ngFor="let elt of movies" class="movie">
+ <h1 class="title">{{ elt.title }} ({{ elt.release_date }})</h1>
+ <p class="original_language"><strong>Langue d'origine:</strong> {{ elt.original_language }}</p>
+ <p class="vote_average"><strong>Note moyenne:</strong> {{ elt.vote_average }}/10   </p>
+ <p class="popularity"><strong> Polularité:</strong> {{ elt.popularity }}</p>
+ <p class="description"><strong>Synopsis:</strong> {{ elt.overview }}</p>
+ <img class="image" src="https://www.themoviedb.org/t/p/w1280/{{elt.poster_path}}" alt=""/>
+</li>
+</ul>
+
+</body>
+</html>

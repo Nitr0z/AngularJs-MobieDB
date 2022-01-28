@@ -1,0 +1,36 @@
+*{
+    background-color: #333333;
+    width: 100%;
+}
+
+.title{
+    font-weight: bold;
+    font-size: 3em;
+    color: #ffffff;
+    padding-top: 100px;
+    padding-bottom: 25px;
+}
+.original_language{
+    font-size: 1.4em;
+    color: #ffffff;
+}
+.vote_average{
+    font-size: 1.4em;
+    color: #ffffff;
+}
+.popularity{
+  font-size: 1.4em;
+  color: #ffffff;
+}
+.description{
+  font-size: 1.2em;
+  color: #ffffff;
+  padding-bottom: 25px;
+}
+.image{
+    width: 50%;
+    height: 50%;
+    text-align: center;
+    margin:auto;
+    display:flex;
+}

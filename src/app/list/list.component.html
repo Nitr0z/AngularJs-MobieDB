@@ -1,0 +1,8 @@
+<li class="list-group-item" 
+    [class.active]="elementActif"
+    (click)="onActive()"
+>   
+    <div class="pastille" *ngIf="elementActif"></div>
+    <span>{{ elementName }}</span>
+    <input type="text" class="form-control" [(ngModel)]="elementName">
+</li>
